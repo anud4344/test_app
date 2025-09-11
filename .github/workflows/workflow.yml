@@ -28,8 +28,8 @@ jobs:
         run: sudo apt-get install libpq-dev
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundler install
+          gem install bundler -v 2.4.22
+          bundler install --jobs 4 --retry 3
       - name: Create database
         run: |
           bundler exec rails db:create RAILS_ENV=test
