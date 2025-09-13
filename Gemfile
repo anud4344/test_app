@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.4.5'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -63,3 +63,4 @@ gem 'rubocop'
 gem 'concurrent-ruby', '1.3.4'
 gem 'yaml_db'
 
+gem 'bigdecimal'
