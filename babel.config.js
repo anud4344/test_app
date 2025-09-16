@@ -34,8 +34,7 @@ module.exports = function (api) {
           modules: false,
           exclude: ['transform-typeof-symbol']
         }
-      ],
-      ["@babel/preset-env"]
+      ]
     ].filter(Boolean),
     plugins: [
       'babel-plugin-macros',
